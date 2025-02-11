@@ -26,7 +26,7 @@ class Chatbot:
         # Set up embeddings and load FAISS vector store.
         self.embeddings = OpenAIEmbeddings()
         self.vector_db = FAISS.load_local(
-            r"C:\Users\Lisardo Iniesta\OneDrive\1_WBS\9. Generative AI\content\faiss_index", 
+            "./faiss_index/index.faiss", 
             self.embeddings, 
             allow_dangerous_deserialization=True
         )
