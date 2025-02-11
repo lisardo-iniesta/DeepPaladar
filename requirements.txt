@@ -2,4 +2,5 @@ langchain-core
 langchain
 langgraph
 langchain_openai
+langchain-community
 faiss-cpu
