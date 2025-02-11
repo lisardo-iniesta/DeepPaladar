@@ -118,7 +118,7 @@ if prompt := st.chat_input("Curious minds wanted!"):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    with st.spinner("Going down the rabbithole for answers..."):
+    with st.spinner("Navegando el recetario catalán..."):
         # Get the answer and the source documents via the chain function.
         answer_dict = chain(prompt)
         response = answer_dict["answer"]
